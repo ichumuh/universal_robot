@@ -5,8 +5,11 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /MotionPlanning1
+        - /MotionPlanning1/Planning Request1
+        - /MotionPlanning1/Planned Path1
+        - /WrenchStamped1
       Splitter Ratio: 0.74256
-    Tree Height: 291
+    Tree Height: 495
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -39,19 +42,74 @@ Visualization Manager:
       Enabled: true
       Move Group Namespace: ""
       MoveIt_Goal_Tolerance: 0
-      MoveIt_Planning_Time: 0
       MoveIt_Planning_Attempts: 1
+      MoveIt_Planning_Time: 0
       MoveIt_Use_Constraint_Aware_IK: true
       MoveIt_Warehouse_Host: 127.0.0.1
       MoveIt_Warehouse_Port: 33829
+      MoveIt_Workspace:
+        Center:
+          X: 0
+          Y: 0
+          Z: 0
+        Size:
+          X: 2
+          Y: 2
+          Z: 2
       Name: MotionPlanning
       Planned Path:
+        Interrupt Display: false
         Links:
           All Links Enabled: true
           Expand Joint Details: false
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
+          _adapter_fwa050_wsg50_frame_in:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          _adapter_fwa050_wsg50_frame_out:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          _adapter_iso50_kms40_frame_in:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          _adapter_iso50_kms40_frame_out:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          _adapter_kms40_fwk050_frame_in:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          _adapter_kms40_fwk050_frame_out:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          _fwk_fwa_050_frame_in:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          _fwk_fwa_050_frame_out:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          _kms40_frame_in:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          _kms40_frame_out:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           base_link:
             Alpha: 1
             Show Axes: false
@@ -61,11 +119,41 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+            Value: true
           forearm_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
+          gripper_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          gripper_finger_left_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          gripper_finger_right_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          gripper_gripper_left_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          gripper_gripper_right_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          gripper_tool_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           shoulder_link:
             Alpha: 1
             Show Axes: false
@@ -95,7 +183,7 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-        Loop Animation: true
+        Loop Animation: false
         Robot Alpha: 0.5
         Show Robot Collision: false
         Show Robot Visual: true
@@ -138,6 +226,51 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
+          _adapter_fwa050_wsg50_frame_in:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          _adapter_fwa050_wsg50_frame_out:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          _adapter_iso50_kms40_frame_in:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          _adapter_iso50_kms40_frame_out:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          _adapter_kms40_fwk050_frame_in:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          _adapter_kms40_fwk050_frame_out:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          _fwk_fwa_050_frame_in:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          _fwk_fwa_050_frame_out:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          _kms40_frame_in:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          _kms40_frame_out:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           base_link:
             Alpha: 1
             Show Axes: false
@@ -147,11 +280,41 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+            Value: true
           forearm_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
+          gripper_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          gripper_finger_left_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          gripper_finger_right_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          gripper_gripper_left_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          gripper_gripper_right_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          gripper_tool_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           shoulder_link:
             Alpha: 1
             Show Axes: false
@@ -185,6 +348,32 @@ Visualization Manager:
         Show Robot Collision: false
         Show Robot Visual: true
       Value: true
+    - Class: rviz/TF
+      Enabled: false
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: false
+      Tree:
+        {}
+      Update Interval: 0
+      Value: false
+    - Alpha: 1
+      Arrow Width: 0.25
+      Class: rviz/WrenchStamped
+      Enabled: true
+      Force Arrow Scale: 0.03
+      Force Color: 204; 51; 51
+      History Length: 1
+      Name: WrenchStamped
+      Topic: /kms40/wrench
+      Torque Arrow Scale: 1
+      Torque Color: 204; 204; 51
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -200,36 +389,36 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 2.9965
+      Distance: 1.06491
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.113567
-        Y: 0.10592
+        X: 0.0921642
+        Y: 0.438434
         Z: 2.23518e-07
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.509797
+      Pitch: 0.314797
       Target Frame: world
       Value: XYOrbit (rviz)
-      Yaw: 5.65995
+      Yaw: 0.966776
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 876
+  Height: 744
   Help:
     collapsed: false
   Hide Left Dock: false
   Hide Right Dock: false
   Motion Planning:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002a20000031cfc0200000005fb000000100044006900730070006c0061007900730100000036000001b4000000b700fffffffb0000000800480065006c00700000000342000000bb0000006500fffffffb0000000a0056006900650077007300000003b0000000b00000009b00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000001f0000001620000015700ffffff000003570000031c00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000002b1000002a2fc0200000004fc00000028000002a2000001c90100001dfa000000010100000002fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000000ffffffff000002a200fffffffb000000100044006900730070006c0061007900730100000000000002a20000010f00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff0000016100000000000000000000025e000002a200000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
-  Width: 1535
+  Width: 1301
   X: 65
   Y: 24

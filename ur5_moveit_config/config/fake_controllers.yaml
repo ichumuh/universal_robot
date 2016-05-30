@@ -9,4 +9,5 @@ controller_list:
       - wrist_3_joint
   - name: fake_endeffector_controller
     joints:
-      []
+      - gripper_base_gripper_left_joint
+      - gripper_base_gripper_right_joint
