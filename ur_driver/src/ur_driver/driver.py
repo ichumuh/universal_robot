@@ -391,6 +391,7 @@ class URConnectionRT(object):
             last_joint_states = msg
         
         wrench_msg = WrenchStamped()
+        wrench_msg.header.frame_id = "/ee_link"
         wrench_msg.header.stamp = now
         wrench_msg.wrench.force.x = stateRT.tcp_force[0]
         wrench_msg.wrench.force.y = stateRT.tcp_force[1]

@@ -123,7 +123,7 @@
     <child link="shoulder_link"/>
     <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.089159"/>
     <axis xyz="0 0 1"/>
-    <limit effort="150.0" lower="-6.2831853" upper="6.2831853" velocity="3.15"/>
+    <limit effort="150.0" lower="-3.14159265" upper="3.14159265" velocity="3.15"/>
     <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="shoulder_link">
@@ -151,7 +151,7 @@
     <child link="upper_arm_link"/>
     <origin rpy="0.0 1.570796325 0.0" xyz="0.0 0.13585 0.0"/>
     <axis xyz="0 1 0"/>
-    <limit effort="150.0" lower="-6.2831853" upper="6.2831853" velocity="3.15"/>
+    <limit effort="150.0" lower="-3.14159265" upper="3.14159265" velocity="3.15"/>
     <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="upper_arm_link">
@@ -179,7 +179,7 @@
     <child link="forearm_link"/>
     <origin rpy="0.0 0.0 0.0" xyz="0.0 -0.1197 0.425"/>
     <axis xyz="0 1 0"/>
-    <limit effort="150.0" lower="-6.2831853" upper="6.2831853" velocity="3.15"/>
+    <limit effort="150.0" lower="-3.14159265" upper="3.14159265" velocity="3.15"/>
     <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="forearm_link">
@@ -207,7 +207,7 @@
     <child link="wrist_1_link"/>
     <origin rpy="0.0 1.570796325 0.0" xyz="0.0 0.0 0.39225"/>
     <axis xyz="0 1 0"/>
-    <limit effort="28.0" lower="-6.2831853" upper="6.2831853" velocity="3.2"/>
+    <limit effort="28.0" lower="-3.14159265" upper="3.14159265" velocity="3.2"/>
     <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="wrist_1_link">
@@ -235,7 +235,7 @@
     <child link="wrist_2_link"/>
     <origin rpy="0.0 0.0 0.0" xyz="0.0 0.093 0.0"/>
     <axis xyz="0 0 1"/>
-    <limit effort="28.0" lower="-6.2831853" upper="6.2831853" velocity="3.2"/>
+    <limit effort="28.0" lower="-3.14159265" upper="3.14159265" velocity="3.2"/>
     <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="wrist_2_link">
@@ -263,7 +263,7 @@
     <child link="wrist_3_link"/>
     <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.09465"/>
     <axis xyz="0 1 0"/>
-    <limit effort="28.0" lower="-6.2831853" upper="6.2831853" velocity="3.2"/>
+    <limit effort="28.0" lower="-3.14159265" upper="3.14159265" velocity="3.2"/>
     <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="wrist_3_link">
@@ -691,7 +691,7 @@
   <joint name="world_joint" type="fixed">
     <parent link="world"/>
     <child link="base_link"/>
-    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <origin rpy="0.0 0.0 0.7853981633974483" xyz="0.0 0.0 0.01"/>
   </joint>
 </robot>
 

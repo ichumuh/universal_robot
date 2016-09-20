@@ -12,6 +12,9 @@
     <group name="manipulator">
         <chain base_link="base_link" tip_link="gripper_tool_frame" />
     </group>
+    <group name="last_link">
+        <chain base_link="base_link" tip_link="ee_link" />
+    </group>
     <group name="endeffector">
         <link name="gripper_base_link" />
         <link name="gripper_gripper_left_link" />
@@ -21,23 +24,48 @@
         <link name="gripper_tool_frame" />
     </group>
     <group_state name="pre_wipe" group="manipulator">
-        <joint name="shoulder_pan_joint" value="3.9269908169872414" />
+        <joint name="shoulder_pan_joint" value="-2.37" />
         <joint name="shoulder_lift_joint" value="-1.5707963267948966" />
         <joint name="elbow_joint" value="-1.95"/>
         <joint name="wrist_1_joint" value="-1.1915926535897932" />
         <joint name="wrist_2_joint" value="1.5707963267948966" />
         <joint name="wrist_3_joint" value="1.5707963267948966" />
     </group_state>
+    <group_state name="pre_wipe3" group="manipulator">
+        <joint name="shoulder_pan_joint" value="-2.053" />
+        <joint name="shoulder_lift_joint" value="-1.12953" />
+        <joint name="elbow_joint" value="-2.2951"/>
+        <joint name="wrist_1_joint" value="-1.2878589803846898" />
+        <joint name="wrist_2_joint" value="1.5707963267948966" />
+        <joint name="wrist_3_joint" value="0.295766" />
+    </group_state>
+    <group_state name="pre_wipe3_h" group="manipulator">
+        <joint name="shoulder_pan_joint" value="-2.3362837473498743" />
+        <joint name="shoulder_lift_joint" value="-1.129526440297262" />
+        <joint name="elbow_joint" value="-2.01206621329"/>
+        <joint name="wrist_1_joint" value="-1.5604918638812464" />
+        <joint name="wrist_2_joint" value="1.5717179775238037" />
+        <joint name="wrist_3_joint" value="0.0" />
+    </group_state>
     <group_state name="pre_wipe2" group="manipulator">
-        <joint name="shoulder_pan_joint" value="4.39" />
+        <joint name="shoulder_pan_joint" value="-1.9" />
         <joint name="shoulder_lift_joint" value="-1.5707963267948966" />
         <joint name="elbow_joint" value="-1.95"/>
         <joint name="wrist_1_joint" value="-1.1915926535897932" />
         <joint name="wrist_2_joint" value="1.5707963267948966" />
-        <joint name="wrist_3_joint" value="2.037" />
+        <joint name="wrist_3_joint" value="-1.10459" />
+    </group_state>
+    <group_state name="pre_wipe2_h" group="manipulator">
+        <joint name="shoulder_pan_joint" value="-1.9" />
+        <joint name="shoulder_lift_joint" value="-1.5707963267948966" />
+        <joint name="elbow_joint" value="-1.5707963"/>
+        <joint name="wrist_1_joint" value="-1.5707963" />
+        <joint name="wrist_2_joint" value="1.5707963" />
+        <joint name="wrist_3_joint" value="-1.1044219175921839" />
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="eef" parent_link="_adapter_fwa050_wsg50_frame_out" group="endeffector" />
+    <!-- <end_effector name="eef" parent_link="_adapter_fwa050_wsg50_frame_out" group="endeffector" /> -->
+    <end_effector name="eef" parent_link="_kms40_frame_out" group="endeffector" />
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="fixed_base" type="fixed" parent_frame="world" child_link="base_link" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
